@@ -1,4 +1,4 @@
-M = input("輸入乘階值M:")
+M = int(input("輸入乘階值M:"))
 n=1
 rag = 1
 tatal=1
