@@ -1,12 +1,31 @@
+from itertools import count
+
+
 t = 8 
 while True :
-    a = [1,4,6,1,3,5,8,7]
+    a = input("輸入數字串").split(" ")
+    """print(type(a[0]))"""
+    """a=[4,4,6,2,3,5,8,7]"""
     if len(a) == t:
         break
 
-print (a.count(1))
+a = list(map(int,a))
 
-for i in range(0,t):
-    for j in range(0,10):
-        print(a.count(j))
-        
+amax=(sorted(a,reverse = True))
+s = int(amax[0])
+print(s)
+
+bignum = 0
+tm = 0
+check = 0
+for i in range(0,s):   
+    if a.count(i) > bignum :
+       tm = i
+       check + 1
+       bignum = a.count(i)
+
+if check > 0:
+    print("每個數字剛好出現一次")
+else:
+    print("出現最多次的數字為:",tm,"出現次數:",bignum) 
+
