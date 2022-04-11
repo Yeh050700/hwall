@@ -15,7 +15,7 @@ s = int(amax[0])
 bignum = 0
 tm = 0
 check = 0
-for i in range(0,s):   
+for i in range(0,s+1):   
     if a.count(i) > bignum :
        tm = i
        bignum = a.count(i)
