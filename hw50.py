@@ -1,0 +1,6 @@
+all = set(["John","Mary","Tina","Fiona","Clairc","Eva","Ben","Bill","Bict"])
+eng = set(["John","Mary","Fiona","Clairc","Ben","Bill"] )
+mat = set(["Mary","Fiona","Clairc","Eva","Ben"])
+print("英文數學都及格", (eng & mat))
+print("數學不及格",(all- mat))
+print("英文及格解數學不及格",(eng & (all - mat)))
